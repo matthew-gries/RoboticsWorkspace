@@ -4,7 +4,7 @@
 #include <pcl/io/io.h>
 #include <pcl/io/pcd_io.h>
 
-const std::string PCD_FILE_PATH = (std::filesystem::path(__FILE__).parent_path().parent_path() / "assets" / "room_scan1.pcd").string();
+const std::string PCD_FILE_PATH = (std::filesystem::path(__FILE__).parent_path().parent_path() / "assets" / "table_scene_lms400.pcd").string();
 
 void cloudViewerOneOff(pcl::visualization::PCLVisualizer& viewer) {
     std::cout << "Running one-off function...\n";
@@ -26,6 +26,7 @@ void cloudViewerLoopCallback(pcl::visualization::PCLVisualizer& viewer) {
 
 int main() {
 
+    std::cout << "Attempting to read from path: " << PCD_FILE_PATH << std::endl;
     pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
     int success = pcl::PCDReader().read(PCD_FILE_PATH, *cloud);
 
