@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 set(CMAKE_CXX_STANDARD 17)
-project(PclPlanarSegmentation)
+project(PclExtractIndices)
 
 find_package(PCL 1.3 REQUIRED COMPONENTS common io)
 
@@ -20,5 +20,5 @@ file(
     "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h"
 )
 
-add_executable(PclPlanarSegmentation ${SOURCE_FILES})
-target_link_libraries(PclPlanarSegmentation ${PCL_LIBRARIES} pcl_segmentation pcl_visualization pcl_filters)
+add_executable(PclExtractIndices ${SOURCE_FILES})
+target_link_libraries(PclExtractIndices ${PCL_LIBRARIES} pcl_segmentation pcl_visualization pcl_filters)
