@@ -10,7 +10,7 @@
 #include <pcl/visualization/cloud_viewer.h>
 
 
-const std::string PCD_FILE_PATH = (std::filesystem::path(__FILE__).parent_path().parent_path() / "assets" / "table_scene_lms400.pcd").string();
+const std::string PCD_FILE_PATH = (std::filesystem::path(__FILE__).parent_path().parent_path() / "assets" / "test2.pcd").string();
 
 int main() {
 

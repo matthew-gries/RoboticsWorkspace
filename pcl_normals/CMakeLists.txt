@@ -21,4 +21,4 @@ file(
 )
 
 add_executable(PclNormal ${SOURCE_FILES})
-target_link_libraries(PclNormal ${PCL_LIBRARIES} pcl_visualization pcl_features)
+target_link_libraries(PclNormal ${PCL_LIBRARIES} pcl_visualization pcl_features pcl_search pcl_segmentation pcl_filters)

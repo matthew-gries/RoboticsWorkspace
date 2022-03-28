@@ -213,6 +213,20 @@ CMakeFiles/PclNormal.dir/src/main.cpp.o
  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+ /usr/include/eigen3/unsupported/Eigen/NonLinearOptimization
+ /usr/include/eigen3/unsupported/Eigen/NumericalDiff
+ /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/HybridNonLinearSolver.h
+ /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/LevenbergMarquardt.h
+ /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/chkder.h
+ /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/covar.h
+ /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/dogleg.h
+ /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/fdjac1.h
+ /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/lmpar.h
+ /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/qrsolv.h
+ /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/r1mpyq.h
+ /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/r1updt.h
+ /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/rwupdt.h
+ /usr/include/eigen3/unsupported/Eigen/src/NumericalDiff/NumericalDiff.h
  /usr/include/pcl-1.10/pcl/ModelCoefficients.h
  /usr/include/pcl-1.10/pcl/PCLHeader.h
  /usr/include/pcl-1.10/pcl/PCLImage.h
@@ -228,6 +242,7 @@ CMakeFiles/PclNormal.dir/src/main.cpp.o
  /usr/include/pcl-1.10/pcl/common/common.h
  /usr/include/pcl-1.10/pcl/common/concatenate.h
  /usr/include/pcl-1.10/pcl/common/copy_point.h
+ /usr/include/pcl-1.10/pcl/common/distances.h
  /usr/include/pcl-1.10/pcl/common/eigen.h
  /usr/include/pcl-1.10/pcl/common/impl/accumulators.hpp
  /usr/include/pcl-1.10/pcl/common/impl/centroid.hpp
@@ -248,6 +263,15 @@ CMakeFiles/PclNormal.dir/src/main.cpp.o
  /usr/include/pcl-1.10/pcl/features/impl/feature.hpp
  /usr/include/pcl-1.10/pcl/features/impl/normal_3d.hpp
  /usr/include/pcl-1.10/pcl/features/normal_3d.h
+ /usr/include/pcl-1.10/pcl/filters/boost.h
+ /usr/include/pcl-1.10/pcl/filters/extract_indices.h
+ /usr/include/pcl-1.10/pcl/filters/filter.h
+ /usr/include/pcl-1.10/pcl/filters/filter_indices.h
+ /usr/include/pcl-1.10/pcl/filters/impl/extract_indices.hpp
+ /usr/include/pcl-1.10/pcl/filters/impl/filter.hpp
+ /usr/include/pcl-1.10/pcl/filters/impl/filter_indices.hpp
+ /usr/include/pcl-1.10/pcl/filters/impl/voxel_grid.hpp
+ /usr/include/pcl-1.10/pcl/filters/voxel_grid.h
  /usr/include/pcl-1.10/pcl/for_each_type.h
  /usr/include/pcl-1.10/pcl/geometry/planar_polygon.h
  /usr/include/pcl-1.10/pcl/impl/cloud_iterator.hpp
@@ -285,6 +309,54 @@ CMakeFiles/PclNormal.dir/src/main.cpp.o
  /usr/include/pcl-1.10/pcl/point_traits.h
  /usr/include/pcl-1.10/pcl/point_types.h
  /usr/include/pcl-1.10/pcl/register_point_struct.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/boost.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/eigen.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/lmeds.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/mlesac.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/msac.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/prosac.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/ransac.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/rmsac.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/rransac.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_circle.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_circle3d.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_cone.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_cylinder.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_line.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_normal_parallel_plane.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_normal_plane.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_normal_sphere.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_parallel_line.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_parallel_plane.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_perpendicular_plane.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_plane.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_sphere.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/impl/sac_model_stick.hpp
+ /usr/include/pcl-1.10/pcl/sample_consensus/lmeds.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/method_types.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/mlesac.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/model_types.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/msac.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/prosac.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/ransac.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/rmsac.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/rransac.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_circle.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_circle3d.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_cone.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_cylinder.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_line.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_normal_parallel_plane.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_normal_plane.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_normal_sphere.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_parallel_line.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_parallel_plane.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_perpendicular_plane.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_plane.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_sphere.h
+ /usr/include/pcl-1.10/pcl/sample_consensus/sac_model_stick.h
  /usr/include/pcl-1.10/pcl/search/impl/kdtree.hpp
  /usr/include/pcl-1.10/pcl/search/impl/organized.hpp
  /usr/include/pcl-1.10/pcl/search/impl/search.hpp
@@ -293,9 +365,12 @@ CMakeFiles/PclNormal.dir/src/main.cpp.o
  /usr/include/pcl-1.10/pcl/search/organized.h
  /usr/include/pcl-1.10/pcl/search/pcl_search.h
  /usr/include/pcl-1.10/pcl/search/search.h
+ /usr/include/pcl-1.10/pcl/segmentation/extract_clusters.h
+ /usr/include/pcl-1.10/pcl/segmentation/impl/extract_clusters.hpp
+ /usr/include/pcl-1.10/pcl/segmentation/impl/sac_segmentation.hpp
+ /usr/include/pcl-1.10/pcl/segmentation/sac_segmentation.h
  /usr/include/pcl-1.10/pcl/visualization/area_picking_event.h
  /usr/include/pcl-1.10/pcl/visualization/boost.h
- /usr/include/pcl-1.10/pcl/visualization/cloud_viewer.h
  /usr/include/pcl-1.10/pcl/visualization/common/actor_map.h
  /usr/include/pcl-1.10/pcl/visualization/common/common.h
  /usr/include/pcl-1.10/pcl/visualization/common/impl/common.hpp

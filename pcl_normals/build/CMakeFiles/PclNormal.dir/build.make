@@ -60,15 +60,15 @@ include CMakeFiles/PclNormal.dir/flags.make
 CMakeFiles/PclNormal.dir/src/main.cpp.o: CMakeFiles/PclNormal.dir/flags.make
 CMakeFiles/PclNormal.dir/src/main.cpp.o: ../src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matt/dev/RoboticsWorkspace/pcl_normals/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PclNormal.dir/src/main.cpp.o"
-	/usr/bin/aarch64-linux-gnu-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PclNormal.dir/src/main.cpp.o -c /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PclNormal.dir/src/main.cpp.o -c /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp
 
 CMakeFiles/PclNormal.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PclNormal.dir/src/main.cpp.i"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp > CMakeFiles/PclNormal.dir/src/main.cpp.i
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp > CMakeFiles/PclNormal.dir/src/main.cpp.i
 
 CMakeFiles/PclNormal.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PclNormal.dir/src/main.cpp.s"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp -o CMakeFiles/PclNormal.dir/src/main.cpp.s
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp -o CMakeFiles/PclNormal.dir/src/main.cpp.s
 
 # Object files for target PclNormal
 PclNormal_OBJECTS = \
@@ -79,78 +79,78 @@ PclNormal_EXTERNAL_OBJECTS =
 
 PclNormal: CMakeFiles/PclNormal.dir/src/main.cpp.o
 PclNormal: CMakeFiles/PclNormal.dir/build.make
-PclNormal: /usr/lib/aarch64-linux-gnu/libpcl_io.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libboost_system.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libboost_iostreams.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libboost_regex.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libboost_system.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 PclNormal: /usr/lib/libOpenNI.so
 PclNormal: /usr/lib/libOpenNI2.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libfreetype.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libz.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libjpeg.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libpng.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libtiff.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libexpat.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libpcl_octree.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libpcl_common.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkalglib-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libfreetype.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkCommonMisc-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtksys-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1
-PclNormal: /usr/lib/aarch64-linux-gnu/libz.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libGLEW.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libSM.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libICE.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libX11.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libXext.so
-PclNormal: /usr/lib/aarch64-linux-gnu/libXt.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libfreetype.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libz.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libjpeg.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libpng.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libtiff.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libexpat.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libfreetype.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkCommonMisc-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1
+PclNormal: /usr/lib/x86_64-linux-gnu/libz.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libGLEW.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libSM.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libICE.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libX11.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libXext.so
+PclNormal: /usr/lib/x86_64-linux-gnu/libXt.so
 PclNormal: CMakeFiles/PclNormal.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matt/dev/RoboticsWorkspace/pcl_normals/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable PclNormal"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PclNormal.dir/link.txt --verbose=$(VERBOSE)
