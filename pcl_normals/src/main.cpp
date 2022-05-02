@@ -17,29 +17,11 @@
 
 const std::string PCD_FILE_PATH = (std::filesystem::path(__FILE__).parent_path().parent_path() / "assets/").string();
 
-int main(int argc, char** argv) {
-
-    /**
-     * @brief Read in the point cloud from the given file
-     * 
-     */
-
-    if (argc != 2) {
-        std::cerr << "Usage: ./PclNormal <path_to_pcd>" << std::endl;
-        return 1;
-    }
-
-    std::string path = PCD_FILE_PATH + argv[1];
-
-    std::cout << "Attempting to read from path: " << path << std::endl;
-    pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
-    int success = pcl::PCDReader().read(path, *cloud);
-
-    if (success != 0) {
-        std::cerr << "Could not read PCD file! File path: " << path << std::endl;
-        return -1; 
-    }
-
+int getPlaneAndNormals(
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud,
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr cardboard_cloud,
+    pcl::PointCloud<pcl::Normal>::Ptr cloud_normals
+) {
     /**
      * @brief Segment the point cloud into planes, should be able to find the cardboard
      * 
@@ -117,7 +99,6 @@ int main(int argc, char** argv) {
     }
     // std::cerr << largest_idx << std::endl;
 
-    pcl::PointCloud<pcl::PointXYZRGB>::Ptr cardboard_cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
     for (const auto& idx : cluster_indices[largest_idx].indices) {
         cardboard_cloud->push_back((*cloud_filtered)[idx]);
     }
@@ -148,21 +129,70 @@ int main(int argc, char** argv) {
     pcl::search::KdTree<pcl::PointXYZRGB>::Ptr ne_tree(new pcl::search::KdTree<pcl::PointXYZRGB>());
     ne.setSearchMethod(ne_tree);
 
-    // Output datasets
-    pcl::PointCloud<pcl::Normal>::Ptr cloud_normals(new pcl::PointCloud<pcl::Normal>);
-
     // Use all neighbors in a sphere of radius 3cm
     ne.setRadiusSearch(0.03);
 
     // Compute the features
     ne.compute(*cloud_normals);
 
+    return 0;
+}
+
+int main(int argc, char** argv) {
+
+    /**
+     * @brief Read in the point cloud from the given file
+     * 
+     */
+
+    if (argc != 3) {
+        std::cerr << "Usage: ./PclNormal <path_to_reference_pcd> <path_to_other_pcd>" << std::endl;
+        return 1;
+    }
+
+    std::string ref_path = PCD_FILE_PATH + argv[1];
+    std::string other_path = PCD_FILE_PATH + argv[2];
+
+    std::cout << "Attempting to read from path: " << ref_path << std::endl;
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr ref_cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
+    int ref_success = pcl::PCDReader().read(ref_path, *ref_cloud);
+
+    std::cout << "Attempting to read from path: " << other_path << std::endl;
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr other_cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
+    int other_success = pcl::PCDReader().read(other_path, *other_cloud);
+
+    if (ref_success != 0) {
+        std::cerr << "Could not read PCD file! File path: " << ref_path << std::endl;
+        return -1; 
+    }
+
+    if (other_success != 0) {
+        std::cerr << "Could not read PCD file! File path: " << other_path << std::endl;
+        return -1; 
+    }
+
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr ref_cloud_cardboard(new pcl::PointCloud<pcl::PointXYZRGB>);
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr other_cloud_cardboard(new pcl::PointCloud<pcl::PointXYZRGB>);
+    pcl::PointCloud<pcl::Normal>::Ptr ref_normals(new pcl::PointCloud<pcl::Normal>);
+    pcl::PointCloud<pcl::Normal>::Ptr other_normals(new pcl::PointCloud<pcl::Normal>);
+
+    int ref_res = getPlaneAndNormals(ref_cloud, ref_cloud_cardboard, ref_normals);
+    if (ref_res != 0) {
+        return -1;
+    }
+    int other_res = getPlaneAndNormals(other_cloud, other_cloud_cardboard, other_normals);
+    if (other_res != 0) {
+        return -1;
+    }
+
     // Visualize
     pcl::visualization::PCLVisualizer::Ptr viewer(new pcl::visualization::PCLVisualizer("3D Viewer"));
     viewer->setBackgroundColor(0, 0, 0);
-    viewer->addPointCloud<pcl::PointXYZRGB>(cloud, "all");
-    viewer->addPointCloud<pcl::PointXYZRGB>(cardboard_cloud, "plane");
-    viewer->addPointCloudNormals<pcl::PointXYZRGB, pcl::Normal>(cardboard_cloud, cloud_normals, 10, 0.05, "normals");
+    viewer->addPointCloud<pcl::PointXYZRGB>(ref_cloud, "all");
+    viewer->addPointCloud<pcl::PointXYZRGB>(ref_cloud_cardboard, "ref_plane");
+    viewer->addPointCloudNormals<pcl::PointXYZRGB, pcl::Normal>(ref_cloud_cardboard, ref_normals, 10, 0.05, "ref_normals");
+    viewer->addPointCloud<pcl::PointXYZRGB>(other_cloud_cardboard, "other_plane");
+    viewer->addPointCloudNormals<pcl::PointXYZRGB, pcl::Normal>(other_cloud_cardboard, other_normals, 10, 0.05, "other_normals");
     viewer->addCoordinateSystem(1.0);
     viewer->initCameraParameters();
 

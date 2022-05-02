@@ -60,15 +60,15 @@ include CMakeFiles/PclNormal.dir/flags.make
 CMakeFiles/PclNormal.dir/src/main.cpp.o: CMakeFiles/PclNormal.dir/flags.make
 CMakeFiles/PclNormal.dir/src/main.cpp.o: ../src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matt/dev/RoboticsWorkspace/pcl_normals/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PclNormal.dir/src/main.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PclNormal.dir/src/main.cpp.o -c /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PclNormal.dir/src/main.cpp.o -c /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp
 
 CMakeFiles/PclNormal.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PclNormal.dir/src/main.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp > CMakeFiles/PclNormal.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp > CMakeFiles/PclNormal.dir/src/main.cpp.i
 
 CMakeFiles/PclNormal.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PclNormal.dir/src/main.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp -o CMakeFiles/PclNormal.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matt/dev/RoboticsWorkspace/pcl_normals/src/main.cpp -o CMakeFiles/PclNormal.dir/src/main.cpp.s
 
 # Object files for target PclNormal
 PclNormal_OBJECTS = \
