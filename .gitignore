@@ -13,3 +13,4 @@ _deps
 */**/build/
 build/**
 build/
+pcl_normals/build/
