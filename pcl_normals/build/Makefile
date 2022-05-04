@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/matt/dev/RoboticsWorkspace/pcl_normals/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named PclNormal
+# Target rules for targets named PclNormals
 
 # Build rule for target.
-PclNormal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 PclNormal
-.PHONY : PclNormal
+PclNormals: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 PclNormals
+.PHONY : PclNormals
 
 # fast build rule for target.
-PclNormal/fast:
-	$(MAKE) -f CMakeFiles/PclNormal.dir/build.make CMakeFiles/PclNormal.dir/build
-.PHONY : PclNormal/fast
+PclNormals/fast:
+	$(MAKE) -f CMakeFiles/PclNormals.dir/build.make CMakeFiles/PclNormals.dir/build
+.PHONY : PclNormals/fast
 
 src/main.o: src/main.cpp.o
 
@@ -129,7 +129,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/PclNormal.dir/build.make CMakeFiles/PclNormal.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/PclNormals.dir/build.make CMakeFiles/PclNormals.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -138,7 +138,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/PclNormal.dir/build.make CMakeFiles/PclNormal.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/PclNormals.dir/build.make CMakeFiles/PclNormals.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -147,7 +147,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/PclNormal.dir/build.make CMakeFiles/PclNormal.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/PclNormals.dir/build.make CMakeFiles/PclNormals.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -156,9 +156,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... PclNormal"
+	@echo "... rebuild_cache"
+	@echo "... PclNormals"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

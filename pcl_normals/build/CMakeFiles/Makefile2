@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/matt/dev/RoboticsWorkspace/pcl_normals/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/PclNormal.dir/all
+all: CMakeFiles/PclNormals.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/PclNormal.dir/clean
+clean: CMakeFiles/PclNormals.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/PclNormal.dir
+# Target rules for target CMakeFiles/PclNormals.dir
 
 # All Build rule for target.
-CMakeFiles/PclNormal.dir/all:
-	$(MAKE) -f CMakeFiles/PclNormal.dir/build.make CMakeFiles/PclNormal.dir/depend
-	$(MAKE) -f CMakeFiles/PclNormal.dir/build.make CMakeFiles/PclNormal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matt/dev/RoboticsWorkspace/pcl_normals/build/CMakeFiles --progress-num=1,2 "Built target PclNormal"
-.PHONY : CMakeFiles/PclNormal.dir/all
+CMakeFiles/PclNormals.dir/all:
+	$(MAKE) -f CMakeFiles/PclNormals.dir/build.make CMakeFiles/PclNormals.dir/depend
+	$(MAKE) -f CMakeFiles/PclNormals.dir/build.make CMakeFiles/PclNormals.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matt/dev/RoboticsWorkspace/pcl_normals/build/CMakeFiles --progress-num=1,2 "Built target PclNormals"
+.PHONY : CMakeFiles/PclNormals.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/PclNormal.dir/rule: cmake_check_build_system
+CMakeFiles/PclNormals.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/matt/dev/RoboticsWorkspace/pcl_normals/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/PclNormal.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/PclNormals.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/matt/dev/RoboticsWorkspace/pcl_normals/build/CMakeFiles 0
-.PHONY : CMakeFiles/PclNormal.dir/rule
+.PHONY : CMakeFiles/PclNormals.dir/rule
 
 # Convenience name for target.
-PclNormal: CMakeFiles/PclNormal.dir/rule
+PclNormals: CMakeFiles/PclNormals.dir/rule
 
-.PHONY : PclNormal
+.PHONY : PclNormals
 
 # clean rule for target.
-CMakeFiles/PclNormal.dir/clean:
-	$(MAKE) -f CMakeFiles/PclNormal.dir/build.make CMakeFiles/PclNormal.dir/clean
-.PHONY : CMakeFiles/PclNormal.dir/clean
+CMakeFiles/PclNormals.dir/clean:
+	$(MAKE) -f CMakeFiles/PclNormals.dir/build.make CMakeFiles/PclNormals.dir/clean
+.PHONY : CMakeFiles/PclNormals.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

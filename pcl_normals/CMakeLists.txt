@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
 set(CMAKE_CXX_STANDARD 17)
-project(PclNormal)
+project(PclNormals)
 
 find_package(PCL 1.3 REQUIRED COMPONENTS common io)
 
@@ -20,5 +20,5 @@ file(
     "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h"
 )
 
-add_executable(PclNormal ${SOURCE_FILES})
-target_link_libraries(PclNormal ${PCL_LIBRARIES} pcl_visualization pcl_features pcl_search pcl_segmentation pcl_filters)
+add_executable(PclNormals ${SOURCE_FILES})
+target_link_libraries(PclNormals ${PCL_LIBRARIES} pcl_visualization pcl_features pcl_search pcl_segmentation pcl_filters)
